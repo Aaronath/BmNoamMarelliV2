@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Mitsva Noam Marelli</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="imgContainer">
+        <img class="imgCard" src="carteMdt.png">
+        <div id="invitationLayer">
+            <img class="layerImg" src="layer_img.png">
+            <button id="showInvitationBtn">
+                Voir l'invitation
+                <img src="cliquez-sur.png" alt="Cliquez sur l'image">
+            </button>
+        </div>
+    </div>
+
+    <div class="location">
+        <a class="btn" target="_blank" href="https://maps.app.goo.gl/h8XGV6b4xZ5nF6Ti7">Voir sur Google Maps</a>
+    </div>
+
+    <div class="rsvp-container">
+        <h2>Merci de confirmer votre présence</h2>
+        <form id="rsvpForm">
+            <div class="input-group">
+                <label for="lastName">Nom:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <input type="text" id="eventi" name="eventi" required value="soirée" hidden>
+            </div>
+
+            <div class="input-group">
+                <label for="firstName">Prénom:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="attendance">Serez-vous présent ?</label>
+                <div class="attendance-options">
+                    <input type="radio" id="yes" name="attendance" value="yes" required>
+                    <label for="yes">Oui</label>
+
+                    <input type="radio" id="no" name="attendance" value="no">
+                    <label for="no">Non</label>
+                </div>
+            </div>
+
+            <div id="guestsNum" class="input-group" style="display: none;">
+                <label for="guests">Combien de personnes viendront avec vous ?</label>
+                <input type="number" id="guests" name="guests" min="0" value="0">
+            </div>
+
+            <input type="submit" value="Envoyer" class="submit-btn">
+        </form>
+    </div>
+
+
+
+
+</div>
+
+<audio id="backgroundMusic" src="background_music.mp3" loop></audio>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("EDSi49UfrOVwiM-2w"); // Remplacez "votre_user_id" par votre User ID EmailJS
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
