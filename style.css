@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0F1228;
+    background-color: black;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 }
 
 .layerImg {
-    width: auto;
+    width: 40rem;
     height: auto;
     display: block;
     z-index: 1;
