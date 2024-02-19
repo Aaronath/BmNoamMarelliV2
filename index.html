@@ -9,8 +9,8 @@
 
 <div class="container">
     <div class="imgContainer">
-        <img class="imgCard" src="carteMdt.png">
-        <div id="invitationLayer">
+        <img class="imgCard" src="soiree.gif">
+        <div style="z-index: 2" id="invitationLayer">
             <img class="layerImg" src="layer_img.png">
             <button id="showInvitationBtn">
                 Voir l'invitation
@@ -19,47 +19,42 @@
         </div>
     </div>
 
-    <div class="location">
+    <div style="margin-top: 3rem" class="location">
         <a class="btn" target="_blank" href="https://maps.app.goo.gl/h8XGV6b4xZ5nF6Ti7">Voir sur Google Maps</a>
     </div>
 
-    <div class="rsvp-container">
+    <div style="margin-top: 3rem" class="login-box">
         <h2>Merci de confirmer votre présence</h2>
         <form id="rsvpForm">
-            <div class="input-group">
-                <label for="lastName">Nom:</label>
+            <div class="user-box">
                 <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">Nom:</label>
                 <input type="text" id="eventi" name="eventi" required value="soirée" hidden>
             </div>
 
-            <div class="input-group">
-                <label for="firstName">Prénom:</label>
+            <div class="user-box">
                 <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName">Prénom:</label>
             </div>
 
-            <div class="input-group">
-                <label for="attendance">Serez-vous présent ?</label>
-                <div class="attendance-options">
+            <div class="attendance-options ">
+                <label style="margin-bottom: 2rem;" for="attendance">Serez-vous présent ?</label>
+                <div class="attendance-inner">
                     <input type="radio" id="yes" name="attendance" value="yes" required>
                     <label for="yes">Oui</label>
-
                     <input type="radio" id="no" name="attendance" value="no">
                     <label for="no">Non</label>
                 </div>
             </div>
 
-            <div id="guestsNum" class="input-group" style="display: none;">
-                <label for="guests">Combien de personnes viendront avec vous ?</label>
+            <div id="guestsNum" class="user-box" style="display: none;">
                 <input type="number" id="guests" name="guests" min="0" value="0">
+                <label for="guests">Combien de personnes viendront avec vous ?</label>
             </div>
 
             <input type="submit" value="Envoyer" class="submit-btn">
         </form>
     </div>
-
-
-
-
 </div>
 
 <audio id="backgroundMusic" src="background_music.mp3" loop></audio>
