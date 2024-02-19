@@ -36,7 +36,7 @@ body {
 }
 
 .layerImg {
-    width: 30%;
+    width: auto;
     height: auto;
     display: block;
     z-index: 1;
