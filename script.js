@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showInvitationBtn.addEventListener('click', function() {
         invitationLayer.style.transition = "transform 1s ease-out";
-        invitationLayer.style.transform = "translateY(-100%)";
+        invitationLayer.style.transform = "translateY(-150%)";
         backgroundMusic.play();
     });
 
